@@ -1,3 +1,3 @@
 function clicou(){
-    alert('Seu cadastro foi realizado com sucesso');
+    alert('Registration successful');
 }
