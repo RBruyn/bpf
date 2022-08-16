@@ -13,7 +13,6 @@
 <body>
     <header>
         <ul>
-            
             <td><button><a href="index.html">HOME</a></button></li>
             <td><button><a href="who.html">WHO WE ARE</a></button></li>
             <td><button><a href="register.html">REGISTER</a></button></li>
@@ -23,7 +22,13 @@
     <div class="conteiner">
         <div class="caixa">
         <h2><u>REGISTER</u></h2>
-       
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+            <input type=hidden name="oid" value="00D8V0000029InR">
+            <input type=hidden name="retURL" value="http://">
+            <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+            <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+            <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+            <label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
         <forms class="form">
             <input type="text" id="nome" name="nome" placeholder="Enter your name"/>
             <br><br>
