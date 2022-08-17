@@ -28,6 +28,6 @@ function start() {
 
 window.addEventListener("load", start);
 
-function clicou(){
+function clicked(){
     alert('Registration successful');
 }
