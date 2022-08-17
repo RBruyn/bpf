@@ -1,0 +1,100 @@
+body {
+    background-image: url(/img/fundo.jpg);
+    background-color: #dddeef;;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: Black;
+    font-size: 25px;
+}
+header {
+    text-align: left;
+    grid-area: cabecalho;
+    background-color: #dddeef;
+}
+header a {
+    text-decoration: none;
+    font-size: 25px;
+    color:#02054b;
+}
+header button {
+    border-radius: 25px;
+    border: none;
+    background-color: transparent;
+}
+header button:hover {
+    background-color: #fff;
+}
+header a:hover {
+    color: black;
+}
+section {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.card {
+    padding: 35px 35px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+}
+footer {
+    margin-top: 2%;
+    grid-area: rodape;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer .rodape {
+    text-align: center;
+}
+.parte1,
+.parte2,
+.parte3 {
+    width: 25%;
+}
+.parte2 {
+    width: 50%;
+    margin: 0 2px;
+}
+.parte3 {
+    margin: 0;
+}
+@media(max-width: 992px) {
+    .principal {
+        grid-template-columns: 100%;
+        grid-template-areas: "cabecalho""secao""barra-lateral""rodape";
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .parte1,
+    .parte2,
+    .parte3 {
+        margin: 0;
+        border: solid 1px #fff;
+        width: 49%;
+    }
+    .parte2 {
+        width: 100%;
+        order: -1;
+    }
+}
+@media(max-width: 768px) {
+    body {
+        margin: 0 15px;
+    }
+    .principal,
+    .parte1,
+    .parte2,
+    .parte3 {
+        width: 100%;
+    }
+    .parte2 {
+        order: initial;
+    }
+}

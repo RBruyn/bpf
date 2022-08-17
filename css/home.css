@@ -1,0 +1,73 @@
+body {
+    background-color: #dddeef;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(18, 18, 18);
+}
+header {
+    text-align: left;
+    grid-area: cabecalho;
+}
+header a {
+    text-decoration: none;
+    font-size: 25px;
+    color:#02054b;
+}
+header button {
+    border-radius: 25px;
+    border: none;
+    background-color: transparent;
+}
+header button:hover {
+    background-color: #fff;
+}
+header a:hover {
+    color: black;
+}
+section {
+    text-align: center;
+    grid-area: secao;
+}
+#slider {
+    padding-right: 100%;
+    padding-bottom: 20%;
+    height: 25vw;
+    position: relative;
+}
+#slider img {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 800ms;
+}
+#slider img.selected {
+    opacity: 1;
+}
+footer {
+    grid-area: rodape;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+footer .rodape {
+    text-align: center;
+}
+footer p{
+    font-size: 20px;
+}
+/*Medidas cell*/
+@media(max-width: 992px) {
+    aside {
+        grid-template-columns: 100%;
+
+    }
+}
+@media(max-width: 768px) {
+    body {
+        margin: 0 15px;
+    }
+}
